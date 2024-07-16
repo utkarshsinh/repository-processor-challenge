@@ -21,8 +21,8 @@ This application processes receipts and calculates points based on specified rul
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/utkarshsinh/receipt-processor.git
-cd receipt-processor
+git clone https://github.com/utkarshsinh/repository-processor-challenge.git
+cd receipt-processor-challenge
 ```
 
 ### 2. Install Dependencies
