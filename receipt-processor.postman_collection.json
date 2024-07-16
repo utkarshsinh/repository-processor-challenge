@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "2887a7b4-f11b-41c1-8773-9c5bfe936170",
+		"name": "receipt-processor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9018343"
+	},
+	"item": [
+		{
+			"name": "Process Receipt-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"retailer\": \"M&M Corner Market\",\n  \"purchaseDate\": \"2022-03-20\",\n  \"purchaseTime\": \"14:33\",\n  \"items\": [\n    {\n      \"shortDescription\": \"Gatorade\",\n      \"price\": \"2.25\"\n    },\n    {\n      \"shortDescription\": \"Gatorade\",\n      \"price\": \"2.25\"\n    },\n    {\n      \"shortDescription\": \"Gatorade\",\n      \"price\": \"2.25\"\n    },\n    {\n      \"shortDescription\": \"Gatorade\",\n      \"price\": \"2.25\"\n    }\n  ],\n  \"total\": \"9.00\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5050/receipts/process?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"receipts",
+						"process"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				},
+				"description": "Process Receipt"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Points-1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/receipts/6f1e861f-3e1f-4474-9fa6-a2382d35f859/points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"receipts",
+						"6f1e861f-3e1f-4474-9fa6-a2382d35f859",
+						"points"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
