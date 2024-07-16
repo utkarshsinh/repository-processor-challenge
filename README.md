@@ -59,17 +59,29 @@ The service will be available at `http://localhost:6000`.
 - **Payload**:
   ```json
   {
-    "retailer": "Target",
-    "purchaseDate": "2022-01-01",
-    "purchaseTime": "13:01",
-    "total": "35.35",
-    "items": [
-      {
-        "shortDescription": "Mountain Dew 12PK",
-        "price": "6.49"
-      }
-    ]
-  }
+  "retailer": "Target",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },{
+      "shortDescription": "Emils Cheese Pizza",
+      "price": "12.25"
+    },{
+      "shortDescription": "Knorr Creamy Chicken",
+      "price": "1.26"
+    },{
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.35"
+    },{
+      "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+      "price": "12.00"
+    }
+  ],
+  "total": "35.35"
+}
   ```
 - **Response**:
   ```json
@@ -87,10 +99,3 @@ The service will be available at `http://localhost:6000`.
     "points": 28
   }
   ```
-
-## License
-This project is licensed under the MIT License.
-
----
-
-This README provides clear instructions on how to set up and run the application both locally and using Docker without the virtual environment setup. If you have any further questions or need additional modifications, feel free to ask!
